@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="back.base" template="/WEB-INF/views/tiles/layout_back.jsp">
+		<put-attribute name="javaScriptLib" value="/WEB-INF/views/utils/javaScriptLib.jsp" />
+		<put-attribute name="header" value="/WEB-INF/views/back/base/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/back/base/footer.jsp" />
+		<put-attribute name="alertMsg" value="/WEB-INF/views/utils/alertMsg.jsp" />
+	</definition>
+	<definition name="back.home" extends="back.base">
+		<put-attribute name="body" value="/WEB-INF/views/back/home.jsp" />
+	</definition>
+
+	<definition name="back.userC.list" extends="back.base">
+		<put-attribute name="body" value="/WEB-INF/views/back/user/userCList.jsp" />
+	</definition>
+	<definition name="back.userC.modify" extends="back.base">
+		<put-attribute name="body" value="/WEB-INF/views/back/user/userCModify.jsp" />
+	</definition>
+
+
+	<definition name="back.spittle.spittleList" extends="back.base">
+		<put-attribute name="body" value="/WEB-INF/views/back/spittle/spittleList.jsp" />
+	</definition>
+	<definition name="back.spittle.spittleModify" extends="back.base">
+		<put-attribute name="body" value="/WEB-INF/views/back/spittle/spittleModify.jsp" />
+	</definition>
+</tiles-definitions>  

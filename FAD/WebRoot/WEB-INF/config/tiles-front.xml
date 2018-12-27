@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+	<definition name="front.base" template="/WEB-INF/views/tiles/layout_front.jsp">
+		<put-attribute name="javaScriptLib" value="/WEB-INF/views/utils/javaScriptLib.jsp" />
+		<put-attribute name="header" value="/WEB-INF/views/front/base/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/front/base/footer.jsp" />
+		<put-attribute name="alertMsg" value="/WEB-INF/views/utils/alertMsg.jsp" />
+	</definition>
+	<definition name="front.home" extends="front.base">
+		<put-attribute name="body" value="/WEB-INF/views/front/home.jsp" />
+	</definition>
+	<!-- 用户相关 -->
+	<definition name="front.user.register" extends="front.base">
+		<put-attribute name="body" value="/WEB-INF/views/front/user/register.jsp" />
+	</definition>
+	<definition name="front.user.login" extends="front.base">
+		<put-attribute name="body" value="/WEB-INF/views/front/user/login.jsp" />
+	</definition>
+	<definition name="front.user.base" extends="front.base">
+		<put-attribute name="body" value="/WEB-INF/views/front/user/base.jsp" />
+	</definition>
+	<definition name="front.user.profile" extends="front.base">
+		<put-attribute name="body" value="/WEB-INF/views/front/user/profile.jsp" />
+	</definition>
+
+	<!-- 文章相关 -->
+	<definition name="front.user.spittleList" extends="front.base">
+		<put-attribute name="body" value="/WEB-INF/views/front/user/spittleList.jsp" />
+	</definition>
+	<definition name="front.user.spittleModify" extends="front.base">
+		<put-attribute name="body" value="/WEB-INF/views/front/user/spittleModify.jsp" />
+	</definition>
+	<definition name="front.home.spittle" extends="front.base">
+		<put-attribute name="body" value="/WEB-INF/views/front/spittle.jsp" />
+	</definition>
+
+
+</tiles-definitions>  
